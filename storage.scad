@@ -20,7 +20,7 @@ translate([($width + $feet_thickness) * 0.5, ($depth - $feet_width) * 0.5, $heig
     cube(size=[$feet_thickness, $feet_width, $height], center = true);
 }
 
-// Shelfs
+// Shelves
 module shelf($pos_y) {
     $block_height = 50;
     union() {
