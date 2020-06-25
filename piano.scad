@@ -3,7 +3,7 @@ $piano_depth = 290;
 $piano_height = 600;
 $board_width = 16;
 $pedal_allowance = 50;
-$piano_allowance = 100;
+$piano_allowance = 70;
 $board1_height = 100;
 $board2_height = 200;
 
