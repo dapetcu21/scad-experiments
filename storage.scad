@@ -51,14 +51,11 @@ shelf(height - ply_thickness);
 shelf(1350);
 
 plank_width=feet_width;
-translate([(width - feet_thickness) * 0.5, 0, 100]) {
-    wood(feet_thickness, depth, plank_width);
+translate([(width + feet_thickness) * 0.5, 0, 100]) {
+    wood(feet_thickness, depth - 2 * feet_width, plank_width);
 }
-translate([-(width - feet_thickness) * 0.5, 0, 100]) {
-    wood(feet_thickness, depth, plank_width);
-}
-translate([-(width - feet_thickness) * 0.5, 0, 100]) {
-    wood(feet_thickness, depth, plank_width);
+translate([-(width + feet_thickness) * 0.5, 0, 100]) {
+    wood(feet_thickness, depth - 2 * feet_width, plank_width);
 }
 translate([0, (depth + feet_thickness) * 0.5, 800]) {
     wood(width + 2 * feet_thickness, feet_thickness, plank_width);
