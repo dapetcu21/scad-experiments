@@ -6,7 +6,7 @@ pedal_allowance = 70;
 piano_allowance = 70; // 5mm tolerance is ok here
 back_height = piano_height - piano_allowance - pedal_allowance - board_thickness;
 back_length = piano_length - 2 * board_thickness;
-support_width = 600 - back_height; // Wood width is 600
+support_width = 600 - back_height - 2; // Wood width is 600, cut is 2mm
 
 module wood(w, h, d) {
     cube(size=[w, h, d], center=true);

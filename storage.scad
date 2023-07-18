@@ -1,7 +1,7 @@
 feet_thickness = 20;
 feet_width = 50;
 height = 2000;
-width = 550 - feet_thickness * 2;
+width = 550 - feet_thickness * 2 - 2; // 2mm cutting error
 depth = 600;
 
 ply_thickness = 10;
